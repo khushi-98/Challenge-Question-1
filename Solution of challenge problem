@@ -1,0 +1,17 @@
+import string
+L=["Ram",1,"Shayam",2,"Aman",3]
+print("List before sorting")
+print(L)
+x=[]
+y=[]
+for i in L:
+    if type(i)==int:
+        x.append(i)
+    else:
+        y.append(i)
+        
+x.sort()
+y.sort()
+x.extend(y)
+print("List after Sorting")
+print(x)
